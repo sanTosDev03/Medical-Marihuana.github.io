@@ -11,6 +11,7 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: var(--fuente-textos);
+    
 }
 
 h1,h2,h3,h4{
@@ -135,24 +136,21 @@ p{
     top: 50%;
     z-index: 0;
 }
-.slider5{
-    position: absolute;
-    left: 90%;
-    top: 35%;
-}
+
 
 
 .product__content,.more_info__content{
     padding: 100px 0px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 80px;
 }
-.producto__img_container{
+.producto__img_container,.more_info__img_container{
     width: 55%;
     max-width: 560px;
 }
-.producto__img_container img{
+.producto__img_container img,.more_info__img_container img{
     width: 100%;
 }
 .products_info{
@@ -163,11 +161,17 @@ p{
     font-weight: 100;
     padding: 20px 0px ;
 }
+.more_info_title{
+    text-align: center;
+}
 .product_text,.more_info_text{
     font-size: 24px;
     font-family: var(--fuente-titulos);
     color: var(--color-secundario);
     padding: 0px 0px 20px ;
+}
+.more_info_text{
+    text-align: center;
 }
 
 .product_types{
@@ -217,9 +221,11 @@ p{
     margin: 30px 0px;
 }
 .more_info__container{
+    height: auto;
     background-color: #ffff;
 }
 .more_info_description_texts{
+    text-align: center;
     padding: 0px 0px 30px 10px ;
 }
 
@@ -435,4 +441,218 @@ p{
 .footer_copy:hover{
     color: var(--color-secundario);
     cursor: pointer;
+}
+
+
+
+/* Estilos para dispositivos móviles (celulares) con ancho de pantalla menor o igual a 768px */
+@media (max-width: 768px) {
+    .product__container,.more_info__container,.product__store{
+        width: 100%;
+        height: auto;
+    }
+    .slider1{
+        display:none;
+    }
+    .slider2{
+        display: none;
+    }
+    .slider3{
+        display: none;
+    }
+    .slider4{
+        width: 100%;
+        max-width: 250px;
+        left: 22%;
+        top: 76%;
+    }
+
+    .contact__links{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__links a{
+        padding: 3px;
+    }
+    .nav__menu_navegation{
+        display: flex;
+        margin: 0px auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+    .product_description p{
+        font-size: 18px;
+        color: #183424;
+    }
+    .banner_title{
+        font-size: 83px;
+    }
+
+    .product__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .producto__img_container{
+        width: 90%;
+        max-width: 300px;
+    }
+    .product_texts{
+        width: 100%;
+    }
+    .product_title br,.product_text br{
+        display: none;
+    }
+    .product_title{
+        font-size: 32px;
+    }
+    .product_text{
+        font-size: 18px;
+        text-align: center;
+    }
+    .product_types{
+        display: flex;
+        flex-direction: column;
+    }
+    .product_type{
+        width: 100%;
+    }
+    .testimonial__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial__card{
+        width: 100%;
+        background-color: #ffff;
+    }
+    .more_info_texts{
+        text-align: center;
+    }
+    .more_info_text br{
+        display: none;
+    }
+    .more_info__img_container{
+        display: none;
+    }
+    .cta_banner__content{
+        flex-direction: column;
+    }
+    .cta_banner_link{
+        margin: 12px 0px;
+    }
+    .product_card{
+        width: 90%;
+    }
+    .partners_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners_content img{
+        width: 90%;
+        padding: 16px 0px;
+    }
+    .footer_content{
+        flex-direction: column;
+    }
+    .about_footer,.footer_useful_links,.footer__location{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__location iframe{
+        width: 300px;
+        height: 250px;
+    }
+
+  } 
+
+  /* Estilos para tabletas en modo retrato con ancho de pantalla entre 768px y 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Agrega aquí tus estilos para tabletas en modo retrato */
+    .slider1{
+        width: 100%;
+        max-width: 350px;
+        display: inline-block;
+        left: 12%;
+        top: 52%;
+    }
+    .slider4{
+        width: 100%;
+        max-width: 350px;
+        left: 50%;
+        top: 68%;
+    }
+    .producto__img_container {
+        width: 100%;
+        max-width: 450px;
+    }
+    .product_title{
+        font-size: 64px;
+    }
+    .product_text{
+        font-size: 28px;
+    }
+    .product_description p{
+        font-size: 22px;
+        color: #183424;
+    }
+    
+    .testimonial__card{
+        width: 80%;
+        background-color: #ffff;
+    }
+    .partners_content{
+        flex-direction: row;
+    }
+    .partners_content img{
+        width: 100%;
+        max-width: 150px;
+        padding: 16px 0px;
+    }
+
+    .footer__location iframe{
+        width: 450px;
+        height: 250px;
+    }
+}
+@media (min-width: 1107px) and (max-width: 1440px){
+    .slider1{
+        width: 100%;
+        max-width: 250px;
+        left: 22%;
+        top: 76%;
+    }
+    .slider2{
+        width: 100%;
+        max-width: 250px;
+        left: 22%;
+        top: 76%;
+    }
+    .slider3{
+        width: 100%;
+        max-width: 250px;
+        left: 22%;
+        top: 76%;
+    }
+    .slider4{
+        width: 100%;
+        max-width: 250px;
+        left: 22%;
+        top: 76%;
+    }
+    .more_info__img_container{
+        width: 55%;
+        max-width: 600px;
+    }
+    .more_info__img_container img{
+        width: 100%;
+    }
+
+
 }
