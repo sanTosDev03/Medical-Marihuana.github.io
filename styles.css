@@ -461,10 +461,7 @@ p{
         display: none;
     }
     .slider4{
-        width: 100%;
-        max-width: 250px;
-        left: 22%;
-        top: 76%;
+       display: none;
     }
 
     .contact__links{
@@ -576,17 +573,10 @@ p{
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Agrega aquí tus estilos para tabletas en modo retrato */
     .slider1{
-        width: 100%;
-        max-width: 350px;
-        display: inline-block;
-        left: 12%;
-        top: 52%;
+        display: none;
     }
     .slider4{
-        width: 100%;
-        max-width: 350px;
-        left: 50%;
-        top: 68%;
+        display: none;
     }
     .producto__img_container {
         width: 100%;
